@@ -1,0 +1,41 @@
+{
+  "name": "recaptcha-hook",
+  "version": "1.1.0",
+  "description": "Google reCAPTCHA react component",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rsamit26/recaptcha-hook"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "rsamit26",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "D": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-add-module-exports": "^0.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb",
+  "globals": {
+    "grecaptcha": true,
+    "console": true
+  },
+  "plugins":["react-hooks"],
+  "rules": {
+    "no-console": 0,
+    "react/jsx-no-bind": 0
+  }
+}
