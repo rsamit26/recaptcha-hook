@@ -26,16 +26,13 @@ function ReCaptcha({
     if (!ready && typeof window !== 'undefined') {
         readyCheck = setInterval(_updateReadyState, 1000);
     }
-    console.log(ready);
 
     useEffect(() => {
-        console.log("will mount and update");
         if (render === 'explicit' && onloadCallback && ready) {
             loadRecaptcha();
         }
         return () => {
             clearInterval(readyCheck);
-            console.log('will unmount');
         }
     }, [loadRecaptcha]);
 
@@ -101,6 +98,5 @@ ReCaptcha.propTypes = {
     theme: PropTypes.oneOf(['light', 'dark']),
     badge: PropTypes.oneOf(['bottomright', 'bottomleft', 'inline'])
 };
-
 
 export default ReCaptcha;
